@@ -72,7 +72,6 @@ title_new_game_surface = medium_font.render("NEW GAME", True, "White")
 title_new_game_surface_hover = medium_font.render("NEW GAME", True, "grey55")
 title_new_game_rect = title_new_game_surface.get_rect(center = (main_menu_rect.centerx, main_menu_rect.centery - 100))
 
-
 title_view_stats_surface = medium_font.render("VIEW STATS", True, "White")
 title_view_stats_surface_hover = medium_font.render("VIEW STATS", True, "grey55")
 title_view_stats_rect = title_view_stats_surface.get_rect(center = (main_menu_rect.centerx, main_menu_rect.centery))
