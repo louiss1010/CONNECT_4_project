@@ -61,7 +61,6 @@ red_rect = red_surf.get_rect(center = (300,50))
 yellow_surf = pygame.image.load("graphics/yellow_piece.png").convert_alpha()
 yellow_rect = yellow_surf.get_rect(center = (300,50))
 
-
 # initialising main menu display
 main_menu_rect = pygame.Rect(300, 350, 200, 100)
 
