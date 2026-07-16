@@ -4,7 +4,7 @@ A two-player connect 4 game built in Python using Pygame. The game features a gr
 
 ## How to Play
 
-From the main menu, click "New Game". From there, an empty 7x6 board appears with a red tile hovering above. The player with the red pieces moves the mouse over the board, and the piece follows, hovering over the column the player's mouse is currently over. The red player drops the piece by clicking, and the piece falls into the lowest available slot on the board. It is now the yellow player's turn. They choose a column to drop their piece by clicking the mouse over their chosen column. Play continues until either one player lines up four of their coloured pieces vertically, horizontally, or diagonally - a "Connect 4", or until the entire board is filled - a draw.
+From the main menu, click "New Game". From there, an empty 7x6 board appears with a red tile hovering above. The player with the red pieces moves the mouse over the board, and the piece follows, hovering over the column the player's mouse is currently over. The red player drops the piece by clicking, and the piece falls into the lowest available slot on the board. It is now the yellow player's turn. They choose a column to drop their piece by clicking the mouse over their chosen column. Play continues until either one player wins by lining up four of their coloured pieces vertically, horizontally, or diagonally - a "Connect 4", or until the entire board is filled - a draw.
 
 Once the game ends, a pop-up window displays the result after a short delay. The players can then navigate back to the main menu, where they can play a new game, view the overall game statistics, or quit the programme.
 
