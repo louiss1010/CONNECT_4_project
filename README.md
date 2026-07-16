@@ -33,7 +33,7 @@ Once the game ends, a pop-up window displays the result after a short delay. The
 - `CONNECT_4.py` - main game script
 - `graphics/` - contains png files for the board slots, red piece, and yellow piece
 - `fonts/` - contains the font used for text rendering
-- `flowcharts/` - contains menu nagivation and gameplay flowcharts
+- `flowcharts/` - contains menu navigation and gameplay flowcharts
 
 ## Author
 
