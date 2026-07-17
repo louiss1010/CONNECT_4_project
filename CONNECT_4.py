@@ -89,7 +89,7 @@ stats_main_menu_surface = medium_font.render("MAIN MENU", True, "White")
 stats_main_menu_surface_hover = medium_font.render("MAIN MENU", True, "grey55")
 stats_main_menu_rect = stats_main_menu_surface.get_rect(center = (stats_rect.centerx, stats_rect.centery + 250))
 
-# initialising game end display
+# initialising game end overlay display
 game_end_rect = pygame.Rect(300,350, 200, 100)
 
 game_end_main_menu_surface = small_font.render("MAIN MENU", True, "White")
@@ -133,7 +133,7 @@ def display_board(board:list):
     Returns:
         None    
     """
-    # displays the pieces, red or yellow, first
+    # displays the pieces, red or yellow, first, depending on the board state
     for i in range(0,6,1):
         for j in range(0,7,1):
             if board[i][j] == red:
@@ -172,7 +172,6 @@ def get_column_when_clicked(mouse_x:int):
         return 6
 
 
-
 def display_hovering_piece(mouse_x: int):
     """
     Displays a hovering piece above the column the user's mouse is over.
@@ -196,11 +195,6 @@ def display_hovering_piece(mouse_x: int):
         if col is not None:
             yellow_rect.center = ((1+col)*100, 50)
         screen.blit(yellow_surf, yellow_rect)
-
-
-
-
-
 
 
 def valid_drop(board:list, column:int):
