@@ -123,6 +123,7 @@ def create_board():
     new_board = [["-" for i in range(board_width)] for j in range(board_height)]
     return new_board
 
+
 def display_board(board:list):
     """
     Displays the current board state on the game window
@@ -206,8 +207,7 @@ def valid_drop(board:list, column:int):
         column - the column to drop the piece
 
     Returns:
-        Boolean - True if there is space to play in that column, False if not
-    
+        Boolean - True if there is space to play in that column, False if not    
     """
     return board[0][column] == "-"
      
@@ -261,7 +261,6 @@ def vertical_check(board:list, last_move:list, player:int):
     Returns:
         Boolean - True if there is a vertical connect 4, False otherwise
     """
-
     # checks if the last move was in row 0, 1 or 2, 
     # since you cannot make a vertical connect 4 from playing in rows 3, 4 or 5 (the bottom 3 rows)
     if last_move[0] in [0, 1, 2]:
@@ -285,8 +284,7 @@ def horizontal_check(board:list, last_move:list, player:int):
 
     Returns:
         Boolean - True if there is a horizontal connect 4, False otherwise
-    """
-    
+    """    
     count = 0 # initialise counting variable
     # scans across the whole row for the last player's colour, counting consecutive matches
     # resets the count when a non-matching piece is found
@@ -406,7 +404,6 @@ def display_game_end_overlay():
     pygame.draw.rect(screen, "White", game_end_rect, width = 3)   
 
 
-
 def update_stats_display():
     """
     Only called at the beginning of view_stats(), updates the text surfaces that display the current stats based on the updated global stats variables.
@@ -418,7 +415,6 @@ def update_stats_display():
     Returns:
         None    
     """
-
     global stats_total_games_played_surface, stats_total_games_played_rect
     global stats_player_1_wins_surface, stats_player_1_wins_rect
     global stats_player_2_wins_surface, stats_player_2_wins_rect
@@ -462,8 +458,7 @@ def play_game():
 
     Returns:
         None    
-    """
-    
+    """    
     global player_turn
     global player1_wins
     global player2_wins
@@ -664,7 +659,7 @@ def view_stats():
             screen.blit(stats_shortest_game_surface, stats_shortest_game_rect)
             screen.blit(stats_longest_game_surface, stats_longest_game_rect)
 
-        # grey out button if its hovered over
+        # grey out button if it is hovered over
         if stats_main_menu_rect.collidepoint(mouse_x, mouse_y):
             screen.blit(stats_main_menu_surface_hover, stats_main_menu_rect)
         else:
