@@ -8,7 +8,7 @@ From the main menu, click "New Game". From there, an empty 6x7 board appears wit
 
 Once the game ends, a pop-up window displays the result after a short delay. The players can then navigate back to the main menu, where they can play a new game, view the overall game statistics, or quit the programme.
 
-The loser of the previous game gets to go first in the next game. In the event of a draw, the player who went first in the last game will go second in the next game.
+The loser of the previous game gets to go first in the next game. In the event of a draw, the player who went first in the previous game will go second in the next game.
 
 ## Requirements
 
